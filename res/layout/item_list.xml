@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item" >
+
+    <ImageView
+        android:id="@+id/iv_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dip"
+        tools:ignore="ContentDescription"
+        android:src="@drawable/ic_launcher" />
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="true"
+	    android:layout_toRightOf="@+id/iv_item_icon"
+	    android:layout_toLeftOf="@+id/cb_item_checked"
+	    android:padding="5dip">
+
+	    <TextView
+	        android:id="@+id/tv_item_text1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/size_item_text1"
+	        android:singleLine="true"
+	        tools:ignore="SelectableText" />
+
+	    <TextView
+	        android:id="@+id/tv_item_text2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/size_item_text2"
+	        android:textColor="@color/gray_black"
+	        android:singleLine="true"
+	        tools:ignore="SelectableText" />
+	    <TextView
+	        android:id="@+id/tv_item_text3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/size_item_text2"
+	        android:textColor="@color/gray_black"
+	        android:maxLines="2"
+	        tools:ignore="SelectableText" />
+	</LinearLayout>
+	
+	<CheckBox 
+	    android:id="@+id/cb_item_checked"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_centerVertical="true"
+	    android:clickable="false"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:visibility="gone"/>
+</RelativeLayout>

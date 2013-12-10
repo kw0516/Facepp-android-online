@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">明德Face</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="choose_pic">选择图片</string>
+    <string name="take_pic">拍照</string>
+    <string name="person_manager">人物管理</string>
+    <string name="group_manager">组管理</string>
+    <string name="faceset_manager">Faceset管理</string>
+    
+    <string name="pick_image_err">图片选取错误，请重新选择！</string>
+    
+    
+    <!-- 人脸检测 -->
+    <string name="backe">返回</string>
+    <string name="detect_face">人脸检测</string>
+    <string name="upload_detect">上传检测</string>
+    <string name="msg_detecting">正在上传图片进行检测&#8230;</string>
+    <string name="add_to_other_person">加入到其他人物</string>
+    <string name="add_to">加入</string>
+    <string name="similarity">相似度</string>
+    <string name="msg_identity">正在识别，请稍候&#8230;</string>
+    <string name="no_person_identify">没有找到匹配的人物</string>
+    <string name="identify_result">识别结果</string>
+    
+    <!-- Person -->
+    <string name="choose_person">选择人物</string>
+	<string name="create_pserson">新增人物</string>
+	<string name="modify_person">修改人物</string>
+	<string name="add_to_group">添加到组</string>
+	<string name="add">添加</string>
+	<string name="delete">删除</string>
+	<string name="add_to_succues">添加成功！</string>
+	<string name="add_to_fail">添加失败，您已添加过！</string>
+	<string name="need_chooose_group">请先选择组</string>
+    
+    <!-- group -->
+	<string name="create">新建</string>
+	<string name="msg_getting_data">正在获取数据&#8230;</string>
+	<string name="no_data">无相关数据！</string>
+	<string name="choose_group">选择组</string>
+	<string name="create_group">新增组</string>
+	<string name="modify_group">修改组</string>
+	
+	<string name="name">名称</string>
+	<string name="tag">说明</string>
+	<string name="submit">提交</string>
+	<string name="cancel">取消</string>
+	<string name="ok">确定</string>
+	<string name="submiting_data">正在提交数据，请稍候&#8230;</string>
+	<string name="deleting">正在删除，请稍候&#8230;</string>
+	<string name="sys_err">系统错误</string>
+    <string name="net_err">网络错误！</string>
+	
+	<!-- Faceset -->
+	<string name="create_faceset">新增Faceset</string>
+	<string name="modify_faceset">修改Faceset</string>
+	
+</resources>

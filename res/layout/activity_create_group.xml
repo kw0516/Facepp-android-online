@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    <com.xiaoying.facedemo.widget.TitleBar
+        android:id="@+id/tb_create_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	<EditText
+        android:id="@+id/et_create_group_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:maxLines="1"
+        android:hint="@string/name" />
+
+    <EditText
+        android:id="@+id/et_create_group_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:maxLines="2"
+        android:minLines="2"
+        android:gravity="top|left"
+        android:hint="@string/tag" />
+
+</LinearLayout>

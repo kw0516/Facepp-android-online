@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.xiaoying.facedemo.widget.TitleBar
+        android:id="@+id/tb_create_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_create_person_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:hint="@string/name"
+        android:maxLines="1" />
+
+    <EditText
+        android:id="@+id/et_create_person_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="top|left"
+        android:hint="@string/tag"
+        android:maxLines="2"
+        android:minLines="2" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_to_group_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:orientation="vertical" >
+
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="2px"
+		    android:background="@color/light_gray"
+		    tools:ignore="PxUsage" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_add_to_group"
+                android:textSize="@dimen/size_item_text1"
+                android:textColor="@color/gray_black"
+                android:text="@string/add_to_group" />
+
+            <Button
+                android:id="@+id/btn_add_to_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/size_item_text1"
+                android:padding="8dip"
+	   			android:background="@drawable/selector_btn"
+                android:text="@string/add" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_add_to_group_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_gray"
+            android:dividerHeight="2px"
+            android:scrollbars="none"
+            tools:ignore="PxUsage" />
+    </LinearLayout>
+
+</LinearLayout>
